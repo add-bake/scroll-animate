@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueScrollmagic from './plugins'
+
+Vue.use(VueScrollmagic)
 
 Vue.config.productionTip = false
 
