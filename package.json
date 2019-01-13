@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "gsap": "^2.0.2",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "scrollmagic": "^2.0.6",
     "vue": "^2.5.21"
   },
