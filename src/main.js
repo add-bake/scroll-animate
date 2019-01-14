@@ -1,6 +1,6 @@
 import Vue from 'vue'
+import VueScrollmagic from './plugin'
 import App from './App.vue'
-import VueScrollmagic from './plugins'
 
 Vue.use(VueScrollmagic)
 

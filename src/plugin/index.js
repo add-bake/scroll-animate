@@ -1,16 +1,13 @@
-import 'gsap'
-import 'gsap/TimelineMax'
-import 'gsap/TweenMax'
-import ScrollMagic from 'scrollmagic'
-import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap'
+import Scrollmagic from 'scrollmagic'
+import 'debug.addIndicators'
+import 'animation.gsap'
 
 const VueScrollmagic = {
   install (Vue, options) {
     const scrollmagic = {
       data () {
         return {
-          controller_: new ScrollMagic.Controller(Object.assign(options || {}, {
+          controller_: new Scrollmagic.Controller(Object.assign(options || {}, {
             container: window
           })),
           handleScrollTo: null
