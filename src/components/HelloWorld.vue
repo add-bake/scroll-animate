@@ -1,5 +1,8 @@
 <template>
-  <div class="page">
+  <div
+    class="page"
+    @touchmove="walkAnimate = true"
+    @touchend="walkAnimate = false">
     <div id="scene1" class="list">
       <img src="../images/index4-20181120.jpg" alt="">
     </div>
@@ -59,7 +62,7 @@ export default {
 
     scene.on('progress', event => {
       // this.walkAnimate = true
-      console.log(this.$scrollmagic.info())
+      // console.log(this.$scrollmagic.info())
     })
 
     this.$scrollmagic.addScene(
@@ -94,11 +97,10 @@ export default {
     display: block;
     max-width: 100%;
   }
-  .stopfish,
   .walkfish {
     position: absolute;
-    top: 150px;
-    left: -60px;
+    top: 130px;
+    left: -130px;
     z-index: 1;
     width: 135px;
     height: 155px;
